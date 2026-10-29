@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Рекламное агентство «ИнфоГрад-1» — продвижение в интернете</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500&display=swap">
+<style>
+:root{--bg:#F6F5FF;--surface:#fff;--ink:#12112B;--muted:#55547A;--blue:#2740FF;--lemon:#FFE45E;--pink:#FF6FB5;--line:#DAD8F5;--on-blue:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0E24;--surface:#1A1940;--ink:#F3F2FF;--muted:#A9A8D6;--line:#2E2D5E;--blue:#6C7DFF}}
+:root[data-theme="dark"]{--bg:#0F0E24;--surface:#1A1940;--ink:#F3F2FF;--muted:#A9A8D6;--line:#2E2D5E;--blue:#6C7DFF}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif}
+h1,h2,h3{font-family:Unbounded,Onest,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font:700 20px Unbounded,sans-serif;text-decoration:none}
+.logo{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.logo svg{width:42px;height:42px;flex:none}
+nav{display:flex;gap:22px;align-items:center}
+nav a{text-decoration:none;font-weight:500}
+.wa{display:block;width:44px;height:44px;border-radius:50%;transition:transform .15s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{display:block;width:44px;height:44px}
+.tg{width:44px;height:44px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.tg:hover{border-color:var(--blue)}
+@media(max-width:700px){nav a.l{display:none}}
+.btn{display:inline-block;background:var(--blue);color:var(--on-blue);padding:14px 26px;border-radius:999px;font-weight:500;text-decoration:none;border:0;font:500 17px Onest,sans-serif;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:var(--lemon);color:#12112B}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:48px 0 72px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(32px,5.4vw,56px);font-weight:700}
+.hero p{color:var(--muted);max-width:50ch;margin:20px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.art{width:100%;height:auto;max-width:440px;justify-self:center}
+section{padding:64px 0}
+h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:22px;padding:26px}
+.card:nth-child(1){background:var(--blue);color:var(--on-blue);border-color:var(--blue)}
+.card:nth-child(1) p{color:inherit;opacity:.9}
+.card:nth-child(4){background:var(--lemon);color:#12112B;border-color:var(--lemon)}
+.card:nth-child(4) p{color:#3a3960}
+.card h3{font-size:18px;margin:14px 0 8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.ic{width:44px;height:44px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+@media(max-width:800px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+.step{border-top:4px solid var(--blue);padding-top:14px;counter-increment:s}
+.step::before{content:counter(s);font:700 28px Unbounded,sans-serif;color:var(--pink)}
+.step h3{font-size:17px;margin:6px 0}
+.step p{margin:0;color:var(--muted);font-size:16px}
+.band{position:relative;overflow:hidden;background:linear-gradient(135deg,#2740FF,#5B2BFF);color:#fff;border-radius:28px;padding:40px 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}
+.band::before,.band::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.band::before{width:220px;height:220px;right:-70px;top:-90px;background:var(--pink);opacity:.35}
+.band::after{width:140px;height:140px;left:-50px;bottom:-70px;background:#fff;opacity:.12}
+.band>div{position:relative;z-index:1;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:24px 22px;font-size:16px;line-height:1.4}
+.band>div::before{content:"";display:block;width:36px;height:5px;border-radius:3px;background:var(--pink);margin-bottom:16px}
+@media(max-width:700px){.band{grid-template-columns:1fr}}
+.band b{display:block;font:700 40px Unbounded,sans-serif;color:#fff;margin-bottom:6px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+.links{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-top:20px}
+form{background:var(--surface);border:2px solid var(--line);border-radius:22px;padding:26px;display:grid;gap:14px}
+label{font-weight:500;font-size:15px;display:grid;gap:6px}
+input,select,textarea{font:400 16px Onest,sans-serif;padding:12px 14px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #1FA971;outline-offset:2px;border-color:#1FA971}
+input:not(:placeholder-shown):valid,textarea:not(:placeholder-shown):valid{border-color:#1FA971;box-shadow:0 0 0 3px rgba(31,169,113,.2)}
+[hidden]{display:none!important}
+#ok{display:none;color:var(--blue);font-weight:500;margin:0}
+footer{padding:32px 0;color:var(--muted);font-size:15px;border-top:2px solid var(--line);margin-top:40px}
+html{-webkit-text-size-adjust:100%}
+body{overflow-x:hidden}
+.hero h1,h2,h3{overflow-wrap:break-word}
+@media(max-width:800px){.hero{padding:32px 0 48px}.art{max-width:360px}}
+@media(max-width:560px){
+body{font-size:16px}
+.wrap{padding:0 16px}
+header{padding:14px 0;gap:10px}
+.logo{font-size:17px}
+nav{gap:10px}
+.wa,.wa svg,.tg{width:40px;height:40px}
+nav .btn{padding:10px 14px;font-size:14px}
+.hero{padding:20px 0 40px;gap:24px}
+.hero h1{font-size:28px}
+.hero p{margin:16px 0 22px}
+.cta{flex-direction:column}
+.cta .btn,.links .btn{width:100%;text-align:center}
+.links{align-items:stretch}
+.art{max-width:280px}
+section{padding:40px 0}
+h2{font-size:24px}
+.lead{margin-bottom:24px}
+.card{padding:20px;border-radius:18px}
+.band{padding:28px 20px;border-radius:22px;gap:18px}
+.band b{font-size:30px}
+form{padding:20px}
+footer{margin-top:24px}
+}
+@media(max-width:400px){nav .btn{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top"><svg viewBox="0 0 44 44" aria-hidden="true"><defs><radialGradient id="ocn" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#6F8CFF"/><stop offset=".55" stop-color="#2740FF"/><stop offset="1" stop-color="#0A1A9E"/></radialGradient><radialGradient id="shd" cx="38%" cy="32%" r="75%"><stop offset=".55" stop-color="#00104D" stop-opacity="0"/><stop offset="1" stop-color="#00104D" stop-opacity=".55"/></radialGradient><linearGradient id="lnd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#CFDBFF"/></linearGradient><clipPath id="gc"><circle cx="22" cy="22" r="20"/></clipPath></defs><circle cx="22" cy="22" r="21.2" fill="#8FB0FF" fill-opacity=".35"/><circle cx="22" cy="22" r="20" fill="url(#ocn)"/><g clip-path="url(#gc)"><g fill="none" stroke="#fff" stroke-opacity=".16" stroke-width=".6"><ellipse cx="22" cy="22" rx="8" ry="20"/><ellipse cx="22" cy="22" rx="15" ry="20"/><path d="M2 22h40M4 13h36M4 31h36"/></g><g fill="url(#lnd)"><path d="M22 5l3 0-1 3h-2zM17 8l4-1 5 1 2 3-3 2-3-1-3 2-3 0-1-3zM15 18l4-1 4 1 4 1 3 3-2 2-2 3-1 5-3 4-3-3-1-5-3-3-2-4zM27 10l8-1 4 4-1 6-5 2-3-2-2-5zM29 21l4 1-1 4-3-1zM28 31h1v3h-1z"/></g><ellipse cx="18" cy="24" rx="6" ry="1.2" fill="#fff" fill-opacity=".25"/><ellipse cx="30" cy="15" rx="5" ry="1" fill="#fff" fill-opacity=".25"/><circle cx="22" cy="22" r="20" fill="url(#shd)"/><ellipse cx="14" cy="11" rx="7" ry="4" fill="#fff" fill-opacity=".28" transform="rotate(-35 14 11)"/></g><circle cx="22" cy="22" r="20" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1"/></svg>«ИнфоГрад-1»</a>
+  <nav><a class="l" href="#services">Услуги</a><a class="l" href="#process">Как работаем</a><a class="l" href="#contacts">Контакты</a>
+  <a class="wa" href="https://wa.me/996779051697" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" title="Написать в WhatsApp"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="22" fill="#25D366"/><path d="M22 9a13 13 0 0 0-11 19.6L9 35l6.6-1.7A13 13 0 1 0 22 9z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M17.5 16.5c-.5 1 0 3 2.2 5.3s4.3 3 5.4 2.6l1.3-1.3-2.6-1.6-1.2.9c-1-.4-2.4-1.7-2.8-2.7l.9-1.2-1.6-2.6z" fill="#fff"/></svg></a>
+  <a class="wa" href="https://t.me/+996779051697" target="_blank" rel="noopener" aria-label="Написать в Telegram" title="Написать в Telegram"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="22" fill="#27A7E7"/><path d="M10 21.6L32 13c1-.4 1.9.2 1.5 1.8L29.8 32c-.3 1.2-1 1.5-2 .9l-5.500-4-2.600 2.500c-.3.3-.6.6-1.100.6l.4-5.600 10.200-9.200c.4-.4-.1-.6-.7-.2L14.600 25.300l-5.300-1.700c-1.200-.4-1.200-1.200.2-1.800z" fill="#fff"/></svg></a>
+  <button class="tg" id="theme" type="button" aria-label="Переключить тему" title="Светлая / тёмная тема">🌙</button>
+  <a class="btn" href="#contacts">Оставить заявку</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Продвигаем бизнес в интернете, пока вы занимаетесь делом</h1>
+    <p>Рекламное агентство полного цикла: ведём соцсети, запускаем рекламу, придумываем логотипы и пишем тексты. Одна команда вместо пяти подрядчиков.</p>
+    <div class="cta"><a class="btn" href="#contacts">Получить консультацию</a><a class="btn ghost" href="#services">Смотреть услуги</a></div>
+  </div>
+  <svg class="art" viewBox="0 0 440 400" role="img" aria-label="Иллюстрация: мегафон, лайки и графики роста">
+    <rect x="30" y="40" width="300" height="300" rx="40" fill="#2740FF"/>
+    <circle cx="330" cy="110" r="70" fill="#FFE45E"/>
+    <rect x="70" y="250" width="40" height="50" rx="8" fill="#FF6FB5"/>
+    <rect x="125" y="210" width="40" height="90" rx="8" fill="#fff"/>
+    <rect x="180" y="160" width="40" height="140" rx="8" fill="#FFE45E"/>
+    <rect x="235" y="110" width="40" height="190" rx="8" fill="#FF6FB5"/>
+    <path d="M70 130 L130 100 L190 120 L270 70" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="340" cy="300" r="56" fill="#FF6FB5"/>
+    <path d="M340 328 L314 302 a14 14 0 0 1 26-12 a14 14 0 0 1 26 12 Z" fill="#fff"/>
+  </svg>
+</div>
+
+<section id="services">
+  <h2>Услуги агентства</h2>
+  <p class="lead">Берём на себя весь маркетинг в интернете: от идеи и дизайна до рекламы и ежедневных публикаций.</p>
+  <div class="grid">
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34 L16 22 L24 28 L38 10"/><path d="M28 10h10v10"/></svg><h3>Продвижение в интернете</h3><p>Стратегия, реклама и аналитика, чтобы вас находили клиенты, а не только друзья.</p></article>
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="15" r="8"/><path d="M6 38c2-9 9-13 16-13s14 4 16 13"/></svg><h3>Продвижение аккаунтов</h3><p>Растим подписчиков и охваты в Instagram, TikTok, VK и Telegram без накруток.</p></article>
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="32" height="28" rx="5"/><path d="M6 17h32M15 5v6M29 5v6"/></svg><h3>Ведение соцсетей</h3><p>Контент-план, публикации, сторис, ответы подписчикам. Аккаунт живёт каждый день.</p></article>
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="22" r="16"/><circle cx="22" cy="22" r="9"/><circle cx="22" cy="22" r="2"/></svg><h3>Таргетированная реклама</h3><p>Таргетологи настраивают рекламу на вашу аудиторию и считают стоимость заявки.</p></article>
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z"/></svg><h3>Разработка логотипов</h3><p>Логотип и фирменный стиль, по которым бренд узнают с первого взгляда.</p></article>
+    <article class="card"><svg class="ic" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 36l4-10L30 8l6 6-18 18z"/><path d="M26 12l6 6"/></svg><h3>Копирайтинг</h3><p>Посты, статьи, описания товаров и рекламные тексты, которые читают и после которых покупают.</p></article>
+  </div>
+</section>
+
+<section id="process">
+  <h2>Как мы работаем</h2>
+  <p class="lead">Понятные этапы и отчёты, чтобы вы всегда знали, на что идёт бюджет.</p>
+  <div class="steps">
+    <div class="step"><h3>Знакомство</h3><p>Обсуждаем бизнес, цели и аудиторию.</p></div>
+    <div class="step"><h3>Стратегия</h3><p>Выбираем каналы и составляем план.</p></div>
+    <div class="step"><h3>Запуск</h3><p>Делаем дизайн, тексты и рекламу.</p></div>
+    <div class="step"><h3>Отчёты</h3><p>Присылаем результаты и улучшаем.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="band">
+    <div><b>150+</b>проектов в портфолио</div>
+    <div><b>15 лет</b>на рынке</div>
+    <div><b>24/7</b>на связи с клиентами</div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="contact">
+    <div>
+      <h2>Обсудим ваш проект?</h2>
+      <p class="lead">Напишите нам или оставьте заявку. Ответим в течение рабочего дня и предложим первые шаги бесплатно.</p>
+      <div class="links">
+        <a class="btn" href="tel:+996222698868">Позвонить: +996 222 698 868</a>
+        <a class="btn alt" href="https://t.me/+996779051697" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn ghost" href="mailto:infograd888@mail.ru">infograd888@mail.ru</a>
+      </div>
+    </div>
+    <form id="f">
+      <label>Ваше имя<input name="n" required autocomplete="name" placeholder="Как вас зовут"></label>
+      <label>Телефон<input name="p" id="ph" type="tel" required autocomplete="tel" placeholder="(900) 000-00-00"></label>
+      <label>Что нужно<select id="svc"><option>Продвижение в интернете</option><option>Ведение соцсетей</option><option>Таргетированная реклама</option><option>Логотип и стиль</option><option>Копирайтинг</option><option>Другое</option></select></label>
+      <label id="oth" hidden>Опишите, что вам нужно<textarea id="otx" rows="3" placeholder="Например: съёмка рилсов для кафе"></textarea></label>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p id="ok" role="status">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Рекламное агентство «ИнфоГрад-1». Все права защищены.</footer>
+</div>
+<script>
+try{(function(){var r=document.documentElement,b=document.getElementById('theme'),m=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):{matches:false};
+function cur(){return r.getAttribute('data-theme')||(m.matches?'dark':'light')}
+function show(){b.textContent=cur()==='dark'?'☀️':'🌙'}
+try{var s=localStorage.getItem('theme');if(s==='light'||s==='dark')r.setAttribute('data-theme',s)}catch(e){}
+show();
+b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}show()});})();}catch(e){}
+try{(function(){var p=document.getElementById('ph');
+p.addEventListener('focus',function(){if(p.value)return;p.value='+7 ';var n=p.value.length;setTimeout(function(){try{p.setSelectionRange(n,n)}catch(e){}},0)});
+p.addEventListener('blur',function(){if(p.value.replace(/\D/g,'')==='7'){p.value='';p.setCustomValidity('')}});
+p.addEventListener('input',function(){p.setCustomValidity('');var all=p.value.replace(/\D/g,''),d=all;if(d[0]==='7'||d[0]==='8')d=d.slice(1);d=d.slice(0,10);if(!all){p.value='';return}if(!d){p.value='+7';return}var r='+7 ('+d.slice(0,3);if(d.length>=3)r+=') '+d.slice(3,6);if(d.length>6)r+='-'+d.slice(6,8);if(d.length>8)r+='-'+d.slice(8,10);p.value=r;if(d.length<10)p.setCustomValidity('Введите номер полностью: 10 цифр после +7')});})();}catch(e){}
+try{(function(){var s=document.getElementById('svc'),o=document.getElementById('oth'),x=document.getElementById('otx');s.addEventListener('change',function(){var other=s.value==='Другое';o.hidden=!other;x.required=other;if(other)x.focus();});})();}catch(e){}
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var f=this;var x=document.getElementById('otx');var sv=f.querySelector('select').value;if(sv==='Другое'&&x.value)sv+=': '+x.value;var t='Новая заявка%0AИмя: '+encodeURIComponent(f.n.value)+'%0AКонтакт: '+encodeURIComponent(f.p.value)+'%0AУслуга: '+encodeURIComponent(sv);window.open('https://wa.me/996779051697?text='+t,'_blank');document.getElementById('ok').style.display='block';f.reset();document.getElementById('oth').hidden=true;x.required=false;});
+</script>
+</body>
+</html>
